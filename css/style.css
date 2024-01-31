@@ -1,5 +1,66 @@
+body {
+	margin-top: 20px;
+	background-color: antiquewhite;
+}
+
+.header-box {
+	background-color: lightblue;
+	border: 1px solid blue;
+	min-height: 50px;
+	font-size: 2rem;
+}
+
 h1 {
 	background-color: gray;
 	text-align: center;
     color: black;
 }
+
+.jumbo-box {
+	background-color: lightblue;
+	border: 1px solid blue;
+	min-height: 50px;
+	font-size: 2rem;
+}
+
+.search-container {
+	height: 800px; 
+	background-color: rgba(0,0,255,0.1);
+	border: 1px solid blue;
+}
+
+.box {
+	background-color: lightblue;
+	border: 1px solid blue;
+	min-height: 500px;
+	font-size: 2rem;
+}
+
+.search-bar-box {
+	background-color: lightgreen;
+	border: 1px solid red;
+	min-height: 50px;
+	font-size: 2rem;
+}
+
+.previous-searches-box {
+	background-color: lightgreen;
+	border: 1px solid red;
+	min-height: 50px;
+	font-size: 2rem;
+}
+
+.box1 {
+	background-color: lightgreen;
+	border: 1px solid red;
+	min-height: 50px;
+	font-size: 2rem;
+}
+
+.trip-advisor-box {
+	background-color: lightgreen;
+	border: 1px solid red;
+	min-height: 50px;
+	font-size: 2rem;
+}
+
