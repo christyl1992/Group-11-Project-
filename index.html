@@ -21,7 +21,7 @@
 	<!-- Site container -->
     <div class="container-md">
   <!-- Header container -->
-      <div class="container-md">
+      <div class="container-md mb-2">
         <div class="row">
           <div class="col">
             <div class="header-box">
@@ -33,7 +33,7 @@
         </div>
       </div>
   <!-- Jumbotron for Title -->
-      <div class="container-md">
+      <div class="container-md mb-2">
         <div class="row">
           <div class="col">
             <div class="jumbo-box">
@@ -45,14 +45,31 @@
   <!-- Main page content container-->
       <div class="container-md">
         <div class="row">
-          <!-- Column 1 - Search bar and previous searches -->
+  <!-- Search bar -->
+  <div class="container-md">
+    <div class="row">
+      <div class="col-12">
+        <div class="search-box">
+          <label>Enter country search:</label>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control formInput" placeholder="Spain, France, Italy etc.">
+							<div class="input-group-append btnApp">
+									<button class="btn btn-warning btn-outline-dark search" type="button"><i class="fas fa-search"></i></button>
+							</div>
+					</div>
+        </div>
+      </div>
+    </div>
+  </div>
+          <!-- Column 1 - Previous searches -->
           <div class="col-2 mt-2 mh-100">
             <div class="box">
               <div class="row">
-                <div class="col-12 mt-5">
+                <!-- <div class="col-12 mt-5">
                   <div class="search-bar-box m-2">
+                    
                   </div>
-                </div>
+                </div> -->
                 <div class="col-12 mt-5">
                   <div class="m-2 previous-searches-box">
                   </div>
