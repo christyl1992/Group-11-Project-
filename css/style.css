@@ -20,14 +20,12 @@ h1 {
 	background-color: lightblue;
 	border: 1px solid blue;
 	min-height: 50px;
-	font-size: 2rem;
 }
 
 .search-box {
 	background-color: lightblue;
 	border: 1px solid blue;
 	min-height: 50px;
-	font-size: 2rem;
 }
 
 .search-container {
@@ -40,27 +38,27 @@ h1 {
 	background-color: lightblue;
 	border: 1px solid blue;
 	min-height: 500px;
-	font-size: 2rem;
 }
 
 .previous-searches-box {
 	background-color: lightgreen;
 	border: 1px solid red;
-	min-height: 50px;
-	font-size: 2rem;
+	min-height: 770px;
 }
 
 .box1 {
 	background-color: lightgreen;
 	border: 1px solid red;
-	min-height: 50px;
-	font-size: 2rem;
+	min-height: 450px;
+}
+
+.article-text-background {
+	background-color: lightgreen;
 }
 
 .trip-advisor-box {
 	background-color: lightgreen;
 	border: 1px solid red;
-	min-height: 50px;
-	font-size: 2rem;
+	min-height: 350px;
 }
 
