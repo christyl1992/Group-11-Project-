@@ -1,25 +1,46 @@
+.thumbnail {
+    position: relative;
+	max-width: 200px;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
 body {
 	margin-top: 20px;
-	background-color: antiquewhite;
+	background-color: white;
 }
 
 .header-box {
-	background-color: lightblue;
-	border: 1px solid blue;
-	min-height: 50px;
-	font-size: 2rem;
+	/* background-color: lightblue;
+	border: 1px solid blue; */
+	/* min-height: 50px;
+	font-size: 2rem; */
+	
 }
 
 h1 {
-	background-color: gray;
+	/* background-color: gray; */
 	text-align: center;
-    color: black;
+    /* color:#01033D; */
+	color: white;
+	/* background-color: white; opacity: 0.9; */
+	/* border-radius: 20px;
+	padding: 20px; */
+	font-family: 'DM Sans', sans-serif;
+
+
 }
 
 .jumbo-box {
 	background-color: lightblue;
-	border: 1px solid blue;
-	min-height: 50px;
+	img: width 100%
+	/* border: 1px solid blue; */
+	/* min-height: 50px; */
 }
 
 .search-box {
@@ -62,3 +83,9 @@ h1 {
 	min-height: 350px;
 }
 
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
