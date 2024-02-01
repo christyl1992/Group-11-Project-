@@ -52,3 +52,5 @@ Thumbs.db
 .ssh/
 
 lib/
+
+.ssh/*
