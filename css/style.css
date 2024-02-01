@@ -15,13 +15,13 @@ body {
 	background-color: white;
 }
 
-.header-box {
+/* .header-box { */
 	/* background-color: lightblue;
 	border: 1px solid blue; */
 	/* min-height: 50px;
 	font-size: 2rem; */
 	
-}
+/* } */
 
 h1 {
 	text-align: center;
@@ -31,7 +31,7 @@ h1 {
 
 .jumbo-box {
 	background-color: lightblue;
-	img: width 100%
+	img: width 100%;
 }
 
 .search-box {
