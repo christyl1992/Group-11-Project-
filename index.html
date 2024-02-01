@@ -66,30 +66,10 @@
                                 <label><h5>Enter country search:</h5></label>
                                 <div class="input-group mb-3">
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal">
                                       Launch demo modal
                                     </button>
 
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                      <div class="modal-dialog">
-                                        <div class="modal-content">
-                                          <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                              <span aria-hidden="true">&times;</span>
-                                            </button>
-                                          </div>
-                                          <div class="modal-body">
-                                            ...
-                                          </div>
-                                          <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
 
                                 </div>
                                 <div class="input-group mb-3">
@@ -217,6 +197,51 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">Country and destinations Guide</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Search bar -->
+                    <div class="container-md">
+                        <div class="row">
+                            <div class="col-12">
+                                <label><h5>Enter country search:</h5></label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control formInput"
+                                           placeholder="Spain, France, Italy etc.">
+                                    <!--
+                                    <div class="input-group-append btnApp">
+                                        <button class="btn btn-warning btn-outline-dark search" type="button"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button class="btn btn-warning btn-outline-dark search" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Jquery -->
     <script
             src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -228,5 +253,8 @@
 
     <!-- Link to javascript file -->
     <script src="./js/script.js"></script>
+
+    <!-- Link to the new modal.js file -->
+    <script src="./js/modal.js"></script>
 </body>
 </html>
