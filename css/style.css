@@ -24,28 +24,20 @@ body {
 /* } */
 
 h1 {
-	/* background-color: gray; */
 	text-align: center;
-    /* color:#01033D; */
 	color: white;
-	/* background-color: white; opacity: 0.9; */
-	/* border-radius: 20px;
-	padding: 20px; */
 	font-family: 'DM Sans', sans-serif;
-
-
 }
 
 .jumbo-box {
 	background-color: lightblue;
-	/* img: width 100% */
-	/* border: 1px solid blue; */
-	/* min-height: 50px; */
+	img: width 100%;
 }
 
 .search-box {
-	background-color: lightblue;
-	border: 1px solid blue;
+	font-family: 'DM Sans', sans-serif;
+	border: 1px solid black;
+	padding: 20px;
 	min-height: 50px;
 }
 
@@ -57,29 +49,31 @@ h1 {
 
 .box {
 	background-color: lightblue;
-	border: 1px solid blue;
+	border: 1px solid black;
+	padding: 10px;
 	min-height: 500px;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .previous-searches-box {
-	background-color: lightgreen;
-	border: 1px solid red;
+	background-color: #EDEDEC;
+	border: 1px solid black;
 	min-height: 770px;
 }
 
 .box1 {
-	background-color: lightgreen;
-	border: 1px solid red;
+	background-color: #EDEDEC;
+	border: 1px solid black;
 	min-height: 450px;
 }
 
 .article-text-background {
-	background-color: lightgreen;
+	background-color: #EDEDEC;
 }
 
 .trip-advisor-box {
-	background-color: lightgreen;
-	border: 1px solid red;
+	background-color: #EDEDEC;
+	border: 1px solid black;
 	min-height: 350px;
 }
 

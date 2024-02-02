@@ -6,5 +6,6 @@ $(document).ready(function() {
       event.preventDefault();
       var country = $("#modalCountryInput").val().trim();
       handleSearch(country);
+      $('#searchModal').modal('hide');
   });
 });
