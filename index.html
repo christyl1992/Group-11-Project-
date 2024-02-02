@@ -1,252 +1,239 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
-
     <!-- Bootstrap -->
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-        crossorigin="anonymous" />
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+            crossorigin="anonymous"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-          crossorigin="anonymous"/>
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Link to css file -->
-    <link rel="stylesheet" href="./css/style.css"/>
-    <title>Country and Destination Guide</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Country Guide</title>
 </head>
-
 <body>
-    <!-- Site container -->
-    <div class="container-md">
-        <!-- Header container -->
-        <div class="container-md mb-2">
-            <div class="row">
-                <div class="col">
-                    <div class="header-box">
-                        <header>
-                            <img src="images/Country Guide Logo.png" class="float-left thumbnail img-fluid" alt="logo">
-                            <!-- <h1 class="mb-2 mt-2">&#9975 Country and Destination Guide &#127958</h1> -->
-                        </header>
-                    </div>
+<!-- Site container -->
+<div class="container-md">
+    <!-- Header container -->
+    <div class="container-md mb-2">
+        <div class="row">
+            <div class="col">
+                <div class="header-box">
+                    <header>
+                        <img src="images/Country Guide Logo.png" class="float-left thumbnail img-fluid" alt="logo">
+                        <!-- <h1 class="mb-2 mt-2">&#9975 Country and Destination Guide &#127958</h1> -->
+                    </header>
                 </div>
             </div>
         </div>
-        <!-- Jumbotron for Title -->
-        <div class="container-md mb-2">
-            <div class="row">
-                <div class="col">
-                    <div class="jumbo-box">
-                        <h1 class="container centered mb-2 mt-2 w-50">Travel anywhere with the touch of a button using our
-                            free country guide...</h1>
-                        <img src="images/Homepage Image (5).png" class="img-fluid mx-auto d-block w-100"
-                             alt="Placeholder image">
-                    </div>
+    </div>
+    <!-- Jumbotron for Title -->
+    <div class="container-md mb-2">
+        <div class="row">
+            <div class="col">
+                <div class="jumbo-box">
+                    <!-- <h1 class="container centered mb-2 mt-2 w-50">Travel anywhere with the touch of a button using our free country guide...</h1> -->
+                    <img src="images/Homepage Image (5).png" class="img-fluid mx-auto d-block w-100" alt="Placeholder image">
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Main page content container-->
-        <div class="container-md">
-            <div class="row">
+    <!-- Main page content container-->
+    <div class="container-md">
+        <div class="row">
+            <!-- Search bar -->
+            <div class="container-md">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="search-box text-center">
+                            <!-- <label><h5>Enter country search:</h5></label> -->
+                            <label><h3>Type the name of the country you want to learn about:</h3></label>
+                            <div class="input-group mb-3">
+                                <input type="text" id="mainInput" class="form-control formInput" placeholder="Spain, France, Italy etc.">
+                                <div class="input-group-append btnApp">
+                                    <button id="mainSearchButton" class="btn btn-warning btn-outline-dark search" type="button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 1 - Previous searches -->
+            <div class="col-2 mt-2 mh-100">
+                <div class="box">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="text-center">Previous searches</h4>
+                            <div class="m-2 previous-searches-box">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 2 - Main part of site -->
+            <div class="col-10 mt-2">
+                <div class="box">
+                    <!-- Nested columns -->
+                    <div class="row">
+                        <div class="col-3 mt-2">
+                            <div class="mt-2 ml-1 box1">
+                                <div class="card flag article-text-background">
+                                    <br />
+                                    <img
+                                            class="card-img-top mx-auto"
+                                            src="https://placehold.co/300x200/jpeg"
+                                            alt="placeholder"
+                                    />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Flag</h4>
+                                        <div class="card-text flag-card">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mt-2">
+                            <div class="mt-2 box1">
+                                <div class="card country-name article-text-background">
+                                    <br />
+                                    <img
+                                            class="card-img-top mx-auto"
+                                            src="images/Country Name.jpg"
+                                            alt="placeholder"
+                                    />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Common name and official name</h4>
+                                        <div class="card-text common-name-card">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mt-2">
+                            <div class="mt-2 box1">
+                                <div class="card capital article-text-background">
+                                    <br />
+                                    <img
+                                            class="card-img-top mx-auto"
+                                            src="images/Capital City.jpg"
+                                            alt="placeholder"
+                                    />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Capital city</h4>
+                                        <div class="card-text capital-card">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mt-2">
+                            <div class="mt-2 mr-1 box1">
+                                <div class="card population article-text-background">
+                                    <br />
+                                    <img
+                                            class="card-img-top mx-auto"
+                                            src="images/Population.jpg"
+                                            alt="placeholder"
+                                    />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Population</h4>
+                                        <div class="card-text population-card">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2 mb-2">
+                            <div class="trip-advisor-box ml-1 mr-1">
+                                <div class="card article-text-background">
+                                    <br />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Wikipedia</h4>
+                                        <div class="card-text wiki-card">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Country and destinations Guide</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
                 <!-- Search bar -->
                 <div class="container-md">
                     <div class="row">
                         <div class="col-12">
-                            <div class="search-box">
-                                <label><h5>Enter country search:</h5></label>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control formInput"
-                                           placeholder="Spain, France, Italy etc.">
-                                    <div class="input-group-append btnApp">
-                                        <button class="btn btn-warning btn-outline-dark search" type="button"><i
-                                                class="fas fa-search"></i></button>
-                                    </div>
-                                </div>
+                            <label><h5>Enter country search:</h5></label>
+                            <div class="input-group mb-3">
+                                <input type="text" id="modalCountryInput" class="form-control formInput"
+                                       placeholder="Spain, France, Italy etc.">
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Column 1 - Previous searches -->
-                <div class="col-2 mt-2 mh-100">
-                    <div class="box">
-                        <div class="row">
-                            <div class="col-12">
-                                <h5 class="text-center">Previous searches</h5>
-                                <div class="m-2 previous-searches-box">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Column 2 - Main part of site -->
-                <div class="col-10 mt-2">
-                    <div class="box">
-                        <!-- Nested columns -->
-                        <div class="row">
-                            <div class="col-3 mt-2">
-                                <div class="mt-2 ml-1 box1">
-                                    <div class="card flag article-text-background">
-                                        <br/>
-                                        <img
-                                                class="card-img-top mx-auto"
-                                                src="https://placehold.co/300x200/jpeg"
-                                                alt="placeholder"
-                                        />
-                                        <div class="card-body">
-                                            <h4 class="card-title">Flag</h4>
-                                            <div class="card-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, neque.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <div class="mt-2 box1">
-                                    <div class="card country-name article-text-background">
-                                        <br/>
-                                        <img
-                                            class="card-img-top mx-auto"
-                                            src="https://placehold.co/300x200/jpeg"
-                                            alt="placeholder"/>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Common name and official name</h4>
-                                            <div class="card-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, neque.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <div class="mt-2 box1">
-                                    <div class="card capital article-text-background">
-                                        <br/>
-                                        <img
-                                                class="card-img-top mx-auto"
-                                                src="https://placehold.co/300x200/jpeg"
-                                                alt="placeholder"
-                                        />
-                                        <div class="card-body">
-                                            <h4 class="card-title">Capital city</h4>
-                                            <div class="card-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, neque.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <div class="mt-2 mr-1 box1">
-                                    <div class="card population article-text-background">
-                                        <br/>
-                                        <img
-                                                class="card-img-top mx-auto"
-                                                src="https://placehold.co/300x200/jpeg"
-                                                alt="placeholder"
-                                        />
-                                        <div class="card-body">
-                                            <h4 class="card-title">Population</h4>
-                                            <div class="card-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, neque.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-2 mb-2">
-                                <div class="trip-advisor-box ml-1 mr-1">
-                                    <div class="card article-text-background">
-                                        <br/>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Tripadvisor</h4>
-                                            <div class="card-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium atque,
-                                                nostrum veritatis delectus blanditiis quae
-                                                voluptates adipisci voluptatem autem quo doloribus quia quas aliquid velit
-                                                at repellendus corporis, unde praesentium odit?
-                                                In quod voluptas asperiores illum labore, exercitationem cupiditate,
-                                                nesciunt tempore, consectetur mollitia explicabo nostrum.
-                                                Voluptatum velit hic iure ipsa.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="modalSearchButton" class="btn btn-warning btn-outline-dark search" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
         </div>
     </div>
+</div>
+<!-- Button trigger modal -->
+<!--
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal">
+    Launch demo modal
+</button>
+-->
 
+<!-- Jquery -->
+<script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
 
-    <!-- Modal -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="searchModalLabel">Country and destinations Guide</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 
-                    <!-- Search bar -->
-                    <div class="container-md">
-                        <div class="row">
-                            <div class="col-12">
-                                <label><h5>Enter country search:</h5></label>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control formInput"
-                                           placeholder="Spain, France, Italy etc.">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- Link to javascript file -->
+<script src="./js/script.js"></script>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                    <button class="btn btn-warning btn-outline-dark search" type="button">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Button trigger modal -->
-    <!--
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal">
-        Launch demo modal
-    </button>
-    -->
+<!-- Link to the new modal.js file -->
+<script src="./js/modal.js"></script>
 
-    <!-- Jquery -->
-    <script
-            src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Link to javascript file -->
-    <script src="./js/script.js"></script>
-
-    <!-- Link to the new modal.js file -->
-    <script src="./js/modal.js"></script>
 </body>
 </html>
