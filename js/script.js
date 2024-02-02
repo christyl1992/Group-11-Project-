@@ -90,7 +90,7 @@ function countryInfo() {
         flagBody.append(flag);
         const capitalCity = restCountry.capital[0];
         capitalBody.append("The capital city is " + capitalCity);
-        const population = restCountry.population;
+        const population = restCountry.population.toLocaleString();
         populationBody.append("The population is " + population);
             // commonBody.append("Country: " + countryName + " (Official: " + countryNameOfficial + ")");
           }
