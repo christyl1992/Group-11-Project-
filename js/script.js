@@ -26,7 +26,7 @@ function getPrevious() {
 
     rowEl.addClass("row savedButtonSearch");
     btnEl.addClass(
-      "btn btn-warning btn-outline-dark font-weight-bold btnSaved"
+      "btn btn-sm btn-warning btn-outline-dark m-1 font-weight-bold mx-auto btnSaved"
     );
     btnEl.attr("type", "button");
 

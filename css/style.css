@@ -62,8 +62,8 @@ h1 {
 }
 
 .previous-searches-box {
-	background-color: lightgreen;
-	border: 1px solid red;
+	/* background-color: lightgreen;
+	border: 1px solid red; */
 	min-height: 770px;
 }
 
