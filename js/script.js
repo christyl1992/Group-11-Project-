@@ -2,19 +2,24 @@ var country = "Spain";
 
 var savedSearch = [];
 //Saves the value of the search
-$(".search").on("click", function (event) {
-  event.preventDefault();
-  country = $(this).parent(".btnApp").siblings(".formInput").val().trim();
-  if (country === "") {
-    return;
-  }
-  savedSearch.push(country);
+function handleSearch(country) {
+    if (country === "") {
+        return;
+    }
+    savedSearch.push(country);
 
-  localStorage.setItem("country", JSON.stringify(savedSearch));
+    localStorage.setItem("country", JSON.stringify(savedSearch));
 
-  getPrevious();
-  countryInfo();
+    getPrevious();
+    countryInfo();
+}
+
+$("#mainSearchButton").on("click", function (event) {
+    event.preventDefault();
+    var country = $("#mainInput").val().trim();
+    handleSearch(country);
 });
+
 //Will create buttons based on search history
 var previousSearchEL = $(".previous-searches-box");
 function getPrevious() {
