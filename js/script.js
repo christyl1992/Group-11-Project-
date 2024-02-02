@@ -81,21 +81,22 @@ function countryInfo() {
       for (let i = 0; i < data.length; i++) {
         var restCountry = data[i];
 
-        // Check if the country is Italy
-        if (restCountry.name.common === country) {
-          const countryName = restCountry.name.common;
-          const countryNameOfficial = restCountry.name.official;
-          commonBody.append(countryName + countryNameOfficial);
-          const flag = restCountry.flags.png;
-          flagBody.append(flag);
-          const capitalCity = restCountry.capital[0];
-          capitalBody.append(capitalCity);
-          const population = restCountry.population;
-          populationBody.append(population);
+      // Check if the country is Italy
+      if (restCountry.name.common === country) {
+        const countryName = restCountry.name.common;
+        const countryNameOfficial = restCountry.name.official;
+        commonBody.append("The common name is " + countryName + " but the official name is " + countryNameOfficial);
+        const flag = restCountry.flags.png;
+        flagBody.append(flag);
+        const capitalCity = restCountry.capital[0];
+        capitalBody.append("The capital city is " + capitalCity);
+        const population = restCountry.population;
+        populationBody.append("The population is " + population);
+            // commonBody.append("Country: " + countryName + " (Official: " + countryNameOfficial + ")");
+          }
         }
-      }
-    });
-}
+      });
+  }
 
 function load() {
   var savedSearchStore = JSON.parse(localStorage.getItem("country"));
