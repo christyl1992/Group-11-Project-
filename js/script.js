@@ -56,6 +56,7 @@ var populationBody = $(".population-card");
 var capitalBody = $(".capital-card");
 var commonBody = $(".common-name-card");
 var flagBody = $(".flag-card");
+var flagBodyImg = $("#flag-card-image");
 
 function countryInfo() {
   var wikiURL = `https://en.wikipedia.org/api/rest_v1/page/summary/${country}?redirect=true`;
@@ -92,7 +93,9 @@ function countryInfo() {
           const countryNameOfficial = restCountry.name.official;
           commonBody.append(countryName + countryNameOfficial);
           const flag = restCountry.flags.png;
-          flagBody.append(flag);
+          //console.log("flag: "+flag);
+          //flagBody.append(flag);
+          flagBodyImg.attr("src", flag);
           const capitalCity = restCountry.capital[0];
           capitalBody.append(capitalCity);
           const population = restCountry.population;
