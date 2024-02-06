@@ -17,6 +17,7 @@ function handleSearch(country) {
 $("#mainSearchButton").on("click", function (event) {
     event.preventDefault();
     var country = $("#mainInput").val().trim();
+    console.log(country);
     handleSearch(country);
 });
 
@@ -45,6 +46,13 @@ function getPrevious() {
   $(".btnSaved").on("click", function (event) {
     event.preventDefault();
     country = $(this).text();
+    if(country === "USA") {
+      country = "United States"
+    };
+    if(country === "UK") {
+      country = "United Kingdom"
+    }
+    console.log(country);
     countryInfo();
     // fiveDayE1();
   });
@@ -112,7 +120,7 @@ function load() {
     savedSearch = savedSearchStore;
   }
   getPrevious();
-  countryInfo();
+  // countryInfo();
 }
 
 load();
