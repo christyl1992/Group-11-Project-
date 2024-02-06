@@ -31,7 +31,7 @@ function getPrevious() {
 
     rowEl.addClass("row savedButtonSearch");
     btnEl.addClass(
-      "btn btn-warning btn-outline-dark font-weight-bold btnSaved"
+      "btn btn-sm btn-warning btn-outline-dark m-1 font-weight-bold mx-auto btnSaved"
     );
     btnEl.attr("type", "button");
 
@@ -87,23 +87,23 @@ function countryInfo() {
       for (let i = 0; i < data.length; i++) {
         var restCountry = data[i];
 
-        // Check if the country is Italy
-        if (restCountry.name.common === country) {
-          const countryName = restCountry.name.common;
-          const countryNameOfficial = restCountry.name.official;
-          commonBody.append(countryName + countryNameOfficial);
-          const flag = restCountry.flags.png;
-          //console.log("flag: "+flag);
-          //flagBody.append(flag);
-          flagBodyImg.attr("src", flag);
-          const capitalCity = restCountry.capital[0];
-          capitalBody.append(capitalCity);
-          const population = restCountry.population;
-          populationBody.append(population);
+      // Check if the country is Italy
+      if (restCountry.name.common === country) {
+        const countryName = restCountry.name.common;
+        const countryNameOfficial = restCountry.name.official;
+        commonBody.append("The common name is " + countryName + " but the official name is " + countryNameOfficial);
+        const flag = restCountry.flags.png;
+        flagBody.append(flag);
+        const capitalCity = restCountry.capital[0];
+        capitalBody.append("The capital city is " + capitalCity);
+        const population = restCountry.population.toLocaleString();
+        populationBody.append("The population is " + population);
+            // commonBody.append("Country: " + countryName + " (Official: " + countryNameOfficial + ")");
+          }
+
         }
-      }
-    });
-}
+      });
+  }
 
 function load() {
   var savedSearchStore = JSON.parse(localStorage.getItem("country"));
