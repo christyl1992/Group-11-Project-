@@ -56,6 +56,7 @@ var populationBody = $(".population-card");
 var capitalBody = $(".capital-card");
 var commonBody = $(".common-name-card");
 var flagBody = $(".flag-card");
+var flagBodyImg = $("#flag-card-image");
 
 function countryInfo() {
   var wikiURL = `https://en.wikipedia.org/api/rest_v1/page/summary/${country}?redirect=true`;
@@ -99,6 +100,7 @@ function countryInfo() {
         populationBody.append("The population is " + population);
             // commonBody.append("Country: " + countryName + " (Official: " + countryNameOfficial + ")");
           }
+
         }
       });
   }
