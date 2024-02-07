@@ -109,6 +109,16 @@ h1 {
 		max-width: 100%;
 	}
 
+	.previous-searches-box {
+		background-color: #EDEDEC;
+		border: 1px solid black;
+		min-height: 200px;
+	}
+
+	.box {
+		min-height: 200px;
+	}
+
 	.btn {
 		display: flex;
 
