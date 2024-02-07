@@ -38,8 +38,7 @@ This project meets the following requirements:
 
 - `index.html`: The entry point of the application. Contains the structural layout.
 - `css/style.css`: Contains the styling for the application.
-- `js/script.js`: Main JavaScript file, containing the logic of the application.
-- `js/modal.js`: Handles the modal functionalities.
+- `js/script-new.js`: Main JavaScript file, containing the logic of the application.
 
 ## Core Functions
 
