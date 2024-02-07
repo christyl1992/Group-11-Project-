@@ -10,18 +10,22 @@
     width: 100%;
 }
 
+
+
+
+.searches-box {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+
+	}
+
+
+
+
 body {
 	margin-top: 20px;
 	background-color: white;
 }
-
-/* .header-box { */
-	/* background-color: lightblue;
-	border: 1px solid blue; */
-	/* min-height: 50px;
-	font-size: 2rem; */
-	
-/* } */
 
 h1 {
 	text-align: center;
@@ -83,3 +87,34 @@ h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
   }
+
+
+
+
+
+
+  /* Media Queries for smaller screen size */
+
+@media screen and (max-width: 768px) {
+	
+	.searches-box {
+		flex: 0 0 auto;
+		max-width: 100%;
+	}
+
+	.btn {
+		display: flex;
+
+	}
+
+	h3 {
+		font-size: 15px;
+	}
+
+	h4 {
+		font-size: 15px;
+	}
+
+	
+	
+}
