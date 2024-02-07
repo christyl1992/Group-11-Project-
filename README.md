@@ -2,7 +2,22 @@
 
 ## Introduction
 
-[Provide a brief introduction about your project. Explain the main idea, motivation, and what real-world problem it solves.]
+PRODUCT TITLE
+European Country and Destination Guide
+
+PRODUCT DESCRIPTION
+This is a country guide for people to learn more about countries. 
+Country common name and official name
+Capital
+Flag
+Population
+Timezone
+Currency
+Trip Advisor information. 
+
+USER STORY 
+As a user I want to learn more about countries so that I can expand my knowledge and find great holiday destinations.
+
 
 ## Project Requirements
 
@@ -32,19 +47,15 @@ This project meets the following requirements:
 
 ## Deployment
 
-[Instructions on how to deploy the application. Include any necessary steps or scripts.]
+Live site - 
 
 ## Usage
 
-[Instructions on how to use the application, including how to perform common tasks.]
-
-## Contributing
-
-[Information on how others can contribute to your project. Include guidelines and steps for contributing.]
+Type in the search bar or modal to see details of countries displayed.
 
 ## License
 
-[Specify the license under which your project is released.]
+MIT Licence
 
 ## Authors and Group Details
 
@@ -59,3 +70,10 @@ This project meets the following requirements:
 
 ### Group
 - p1-g11
+
+### Screenshots
+![image](https://github.com/christyl1992/Country-Guide/assets/150267998/3ef3eab0-ba9c-4bbd-986b-bead1f9ed353)
+
+![image](https://github.com/christyl1992/Country-Guide/assets/150267998/97517e3b-85c2-4c86-9ea0-296cae40e086)
+
+![image](https://github.com/christyl1992/Country-Guide/assets/150267998/1710b240-7da4-41ee-9bf7-4717e506ca34)
