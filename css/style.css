@@ -6,10 +6,23 @@
     width: 100%;
 }
 
+
+
+
+.searches-box {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+
+	}
+
+
+
+
 body {
 	margin-top: 20px;
 	background-color: white;
 }
+
 
  /* Style for the Navbar  */
 .customNav { 
@@ -85,8 +98,36 @@ h1 {
 	transform: translate(-50%, -50%);
   }
 
+
+
+  /* Media Queries for smaller screen size */
+
+@media screen and (max-width: 768px) {
+	
+	.searches-box {
+		flex: 0 0 auto;
+		max-width: 100%;
+	}
+
+	.btn {
+		display: flex;
+
+	}
+
+	h3 {
+		font-size: 15px;
+	}
+
+	h4 {
+		font-size: 15px;
+	}
+
+	
+	
+}
   /* Style for the button */
 .btn {
 	background-color: rgb(166, 204, 216);
 	border: none;
 };
+
