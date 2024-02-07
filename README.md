@@ -47,7 +47,7 @@ This project meets the following requirements:
 
 ## Deployment
 
-Live site - 
+Live site - https://christyl1992.github.io/Country-Guide/
 
 ## Usage
 
